@@ -4,11 +4,10 @@
 
         <div class="row bg-white"> 
             <div class="sky">
-                <div class="moon">
-                </div>
+                <img src="{% static 'assets/images/landingpage/moon.png' %}" class="img-fluid moon" alt="...">
                 
             </div>
-            <img src="{% static 'assets/images/landingpage/rock.png' %}" class="img-fluid top-imagehead" alt="...">
+            <img src="{% static 'assets/images/landingpage/rock.png' %}" class="img-fluid top-imageheadrock" alt="...">
             <img src="{% static 'assets/images/landingpage/base.png' %}" class=" top-imagehead" alt="...">
             <h1 class="h1b tracking-in-expand h1left">
                 Make Dreams<br>
@@ -46,91 +45,123 @@
         </div>
         <img src="{% static 'assets/images/wave.svg' %}" class="img-fluid" alt="...">
         -->
-  
+        <!-- landing page bg 2-->
+        <div class="row bg-white">
+            <img src="{% static 'assets/images/waveflip.svg' %}" class="img-fluid" alt="...">
+            <!--<div class="container py-2">-->
+                <div class="col-md-8 mx-auto ml-2 mr-2">
+                    <div class="container py-2">
+                        <h2 class="font-weight-light text-center text-muted py-3 mt-5">About me</h2>
+                        <!-- timeline item 3 -->
+                        <div class="row g-0">
+                            
+                            <div class="col-sm py-2 animated-slide-right">
+                                <div class="card radius-15">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <img src="{% static 'assets/images/landingpage/men1.png' %}" class="img-fluid full-circle" alt="...">
+                                            </div>
+                                            <div class="col-md-6 right">
+                                                <div class="float-end text-primary small">Jan 10th 2019 8:30 AM</div>
+                                                <h4 class="card-title text-primary">Day 2 Sessions</h4>
+                                                <p class="card-text">Sign-up for the lessons and speakers that coincide with your course syllabus. Meet and greet with instructors.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    
+                </div>
+                
+            <!--</div>-->
+        </div>
+        
     <div class="row bg-white">
-        <img src="{% static 'assets/images/waveflip.svg' %}" class="img-fluid" alt="...">
         <!--<div class="container py-2">-->
             <div class="col-md-8 mx-auto ml-2 mr-2">
                 <div class="container py-2">
                     <h2 class="font-weight-light text-center text-muted py-3 mt-5">Timeline Example 2</h2>
-                <!-- timeline item 3 -->
-                <div class="row g-0">
-                    <div class="col-sm">
-                        <!--spacer-->
-                    </div>
-                    <div class="col-sm-1 text-center flex-column d-none d-sm-flex ">
-                        <div class="row h-50">
-                            <div class="col border-end">&nbsp;</div>
-                            <div class="col">&nbsp;</div>
+                    <!-- timeline item 3 -->
+                    <div class="row g-0">
+                        <div class="col-sm">
+                            <!--spacer-->
                         </div>
-                        <h5 class="m-2">
-                            <span class="badge rounded-pill bg-primary border">&nbsp;</span>
-                        </h5>
-                        <div class="row h-50">
-                            <div class="col border-end">&nbsp;</div>
-                            <div class="col">&nbsp;</div>
+                        <div class="col-sm-1 text-center flex-column d-none d-sm-flex ">
+                            <div class="row h-50">
+                                <div class="col border-end">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                            <h5 class="m-2">
+                                <span class="badge rounded-pill bg-primary border">&nbsp;</span>
+                            </h5>
+                            <div class="row h-50">
+                                <div class="col border-end">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm py-2 animated-slide-right">
-                        <div class="card radius-15">
-                            <div class="card-body">
-                                <div class="float-end text-primary small">Jan 10th 2019 8:30 AM</div>
-                                <h4 class="card-title text-primary">Day 2 Sessions</h4>
-                                <p class="card-text">Sign-up for the lessons and speakers that coincide with your course syllabus. Meet and greet with instructors.</p>
-                                <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-target="#t22_details" data-bs-toggle="collapse">Show Details ▼</button>
-                                <div class="collapse border" id="t22_details">
-                                    <div class="p-2 text-monospace">
-                                        <div>08:30 - 09:00 Breakfast in CR 2A</div>
-                                        <div>09:00 - 10:30 Live sessions in CR 3</div>
-                                        <div>10:30 - 10:45 Break</div>
-                                        <div>10:45 - 12:00 Live sessions in CR 3</div>
+                        <div class="col-sm py-2 animated-slide-right">
+                            <div class="card radius-15">
+                                <div class="card-body">
+                                    <div class="float-end text-primary small">Jan 10th 2019 8:30 AM</div>
+                                    <h4 class="card-title text-primary">Day 2 Sessions</h4>
+                                    <p class="card-text">Sign-up for the lessons and speakers that coincide with your course syllabus. Meet and greet with instructors.</p>
+                                    <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-target="#t22_details" data-bs-toggle="collapse">Show Details ▼</button>
+                                    <div class="collapse border" id="t22_details">
+                                        <div class="p-2 text-monospace">
+                                            <div>08:30 - 09:00 Breakfast in CR 2A</div>
+                                            <div>09:00 - 10:30 Live sessions in CR 3</div>
+                                            <div>10:30 - 10:45 Break</div>
+                                            <div>10:45 - 12:00 Live sessions in CR 3</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--/row-->
-                <!-- timeline item 4 -->
-                <div class="row g-0 pb-5">
-                    <div class="col-sm py-2 animated-slide-left">
-                        <div class="card radius-15">
-                            <div class="card-body">
-                                <div class="float-end text-primary small">Jan 10th 2019 8:30 AM</div>
-                                <h4 class="card-title text-primary">Day 2 Sessions</h4>
-                                <p class="card-text">Sign-up for the lessons and speakers that coincide with your course syllabus. Meet and greet with instructors.</p>
-                                <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-target="#t22_details" data-bs-toggle="collapse">Show Details ▼</button>
-                                <div class="collapse border" id="t22_details">
-                                    <div class="p-2 text-monospace">
-                                        <div>08:30 - 09:00 Breakfast in CR 2A</div>
-                                        <div>09:00 - 10:30 Live sessions in CR 3</div>
-                                        <div>10:30 - 10:45 Break</div>
-                                        <div>10:45 - 12:00 Live sessions in CR 3</div>
+                    <!--/row-->
+                    <!-- timeline item 4 -->
+                    <div class="row g-0 pb-5">
+                        <div class="col-sm py-2 animated-slide-left">
+                            <div class="card radius-15">
+                                <div class="card-body">
+                                    <div class="float-end text-primary small">Jan 10th 2019 8:30 AM</div>
+                                    <h4 class="card-title text-primary">Day 2 Sessions</h4>
+                                    <p class="card-text">Sign-up for the lessons and speakers that coincide with your course syllabus. Meet and greet with instructors.</p>
+                                    <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-target="#t22_details" data-bs-toggle="collapse">Show Details ▼</button>
+                                    <div class="collapse border" id="t22_details">
+                                        <div class="p-2 text-monospace">
+                                            <div>08:30 - 09:00 Breakfast in CR 2A</div>
+                                            <div>09:00 - 10:30 Live sessions in CR 3</div>
+                                            <div>10:30 - 10:45 Break</div>
+                                            <div>10:45 - 12:00 Live sessions in CR 3</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-                        <div class="row h-50">
-                            <div class="col border-end">&nbsp;</div>
-                            <div class="col">&nbsp;</div>
+                        <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                                <div class="col border-end">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                            <h5 class="m-2">
+                                <span class="badge rounded-pill bg-primary border">&nbsp;</span>
+                            </h5>
+                            <div class="row h-50">
+                                <div class="col">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
                         </div>
-                        <h5 class="m-2">
-                            <span class="badge rounded-pill bg-primary border">&nbsp;</span>
-                        </h5>
-                        <div class="row h-50">
-                            <div class="col">&nbsp;</div>
-                            <div class="col">&nbsp;</div>
+                        <div class="col-sm">
+                            <!--spacer-->
                         </div>
                     </div>
-                    <div class="col-sm">
-                        <!--spacer-->
-                    </div>
+                    <!--/row-->
                 </div>
-                <!--/row-->
-                </div>
-                
             </div>
             
         <!--</div>-->
